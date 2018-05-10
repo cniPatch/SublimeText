@@ -40,7 +40,6 @@ if [[ -e /usr/bin/bspatch ]]; then
 					rm "$SUBLIME"
 					mv "$SUBLIME_TMP" "$SUBLIME"
 					chmod a+x "$SUBLIME"
-					rm "$SUBLIME_TMP"
 				fi
 				echo "搞定啦!"
 			else
