@@ -5,12 +5,12 @@ if [[ ! -e /usr/bin/bspatch ]]; then
 	exit 2
 fi
 
-SHA="a3ff4cd33bf5b8d171a17f7061e5f59c95d1957756560cab870041d799b1cc97"
+SHA="c9ecf4eed3b11ebaf6fa0c45c6d2114ddbcdc929fda6bab566376570f5d98517"
 SUBLIME="/Applications/Sublime Text.app/Contents/MacOS/Sublime Text"
 SUBLIME_TMP="/Applications/Sublime Text.app/Contents/MacOS/Sublime Text.tmp"
-SUBLIME_PATCH="./SublimeText-3173.patch"
+SUBLIME_PATCH="./SublimeText-3175.patch"
 
-VERSION=3173
+VERSION=3175
 
 if [[ -e /usr/bin/bspatch ]]; then
 	while :
@@ -18,7 +18,7 @@ if [[ -e /usr/bin/bspatch ]]; then
 		clear
 		echo "已安装 bspatch 程序, 准备应用补丁...";
 		echo
-		echo "本补丁仅适用于 SublimeText 3173 版本, 请确认您已将程序安装至应用程序目录?"
+		echo "本补丁仅适用于 SublimeText $VERSION 版本, 请确认您已将程序安装至应用程序目录?"
 		echo "  1) 已经安装原版"
 		echo "  2) 退出补丁"
 		read -p "请选择 [1-2]: " option
@@ -43,7 +43,7 @@ if [[ -e /usr/bin/bspatch ]]; then
 				fi
 				echo "搞定啦!"
 			else
-				echo "您的文件版本不正确, 或已被修改, 请通过官方网站下载  SublimeText 3173 版本."
+				echo "您的文件版本不正确, 或已被修改, 请通过官方网站下载  SublimeText $VERSION 版本."
 				exit 3
 			fi
 			exit
