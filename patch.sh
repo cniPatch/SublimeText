@@ -5,12 +5,12 @@ if [[ ! -e /usr/bin/bspatch ]]; then
 	exit 2
 fi
 
-SHA="c9ecf4eed3b11ebaf6fa0c45c6d2114ddbcdc929fda6bab566376570f5d98517"
+SHA="6434bfa5b3697bdb422da49cb8126da598455ac7158f0653479f484081337d70"
 SUBLIME="/Applications/Sublime Text.app/Contents/MacOS/Sublime Text"
 SUBLIME_TMP="/Applications/Sublime Text.app/Contents/MacOS/Sublime Text.tmp"
-SUBLIME_PATCH="./SublimeText-3175.patch"
+SUBLIME_PATCH="./SublimeText-3176.patch"
 
-VERSION=3175
+VERSION=3176
 
 if [[ -e /usr/bin/bspatch ]]; then
 	while :
